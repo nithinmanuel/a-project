@@ -5,10 +5,11 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.string :meta_title
       t.text :description
       t.timestamp
-      t.string :datetime -> { Time.now }
+      t.string :datetime, default: -> { Time.now }
     end
   end
 end
 
 
 #t.string :my_default_proc, :datetime, default: -> { Time.now }
+#<td><%= (product.datetimestrftime("%B %d %Y, %l:%M%P")) %></td>
