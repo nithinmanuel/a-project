@@ -4,11 +4,9 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :meta_title
       t.text :description
-      t.timestamps
-      t.string :datetime
-    
-      t.attribute :my_default_proc, :datetime, default: -> { Time.now }
-
+      t.timestamp
+      attribute :my_default_proc, :datetime, default: -> { Time.now }
+  end
       #t.strftime(2007,11,19,8,37,48,"-06:00") 
       
   
@@ -19,7 +17,6 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       #d.strftime("Printed on %m/%d/%Y")   #=> "Printed on 11/19/2007"
       #d.strftime("at %I:%M%p")
     #t = Time.n
-end
 
 
 #<td><%= product.strftime("%B %d %Y, %l:%M%P") %></td>
