@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'alchemy-devise' 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+gem 'concurrent-ruby', require: 'concurrent'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
