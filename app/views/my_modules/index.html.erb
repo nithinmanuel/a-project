@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>My Modules</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Name</th>
+      <th>Meta title</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @my_modules.each do |my_module| %>
+      <tr>
+        <td><%= my_module.name %></td>
+        <td><%= my_module.meta_title %></td>
+        <td><%= my_module.description %></td>
+        <td><%= link_to 'Show', my_module %></td>
+        <td><%= link_to 'Edit', edit_my_module_path(my_module) %></td>
+        <td><%= link_to 'Destroy', my_module, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New My Module', new_my_module_path %>

@@ -1,0 +1,2 @@
+module MyModulesHelper
+end
