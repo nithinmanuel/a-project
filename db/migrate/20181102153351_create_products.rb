@@ -5,7 +5,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.string :meta_title
       t.text :description
       t.timestamp
-      attribute :my_default_proc, :datetime, default: -> { Time.now }
+      t.attribute :my_default_proc, :datetime, default: -> { Time.now }
     end
   end
 end
