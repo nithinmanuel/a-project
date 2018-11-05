@@ -13,3 +13,4 @@ end
 
 #t.string :my_default_proc, :datetime, default: -> { Time.now }
 #<td><%= (product.datetimestrftime("%B %d %Y, %l:%M%P")) %></td>
+#<td><%= (product.creator_attribute.strftime("%B %d %Y, %l:%M%P")) %></td>
