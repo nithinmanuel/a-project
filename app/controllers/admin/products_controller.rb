@@ -1,2 +1,2 @@
-class Admin::ProductsController < Alchemy::Admin::ResourcesController
+class Admin::ProductsController < Admin::ResourcesController
 end
