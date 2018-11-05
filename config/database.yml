@@ -27,7 +27,7 @@ development:
   adapter: postgresql
   encoding: unicode
   database: a-project
-  host: https://git.heroku.com/frozen-tundra-19709.git
+  host: localhost
   pool: 5
   username: postgres
   password: nithin1
@@ -39,7 +39,7 @@ development:
     adapter: postgresql
     encoding: unicode
     database: a-project
-    host: https://git.heroku.com/frozen-tundra-19709.git
+    host: localhost
     pool: 5
     username: postgres
     password: nithin1 
