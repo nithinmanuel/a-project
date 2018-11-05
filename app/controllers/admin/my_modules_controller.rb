@@ -1,2 +1,2 @@
-class Admin::MyModulesController < Admin::ResourcesController
+class Admin::MyModulesController < Alchemy::Admin::ResourcesController
 end
